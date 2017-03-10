@@ -1,0 +1,7 @@
+{
+	"PackageName" : "CoreModules",
+	"Modules" : 
+	[
+		"../VsGuiCore/Client/VsGuiCore.Client.Wpf/bin/Debug"
+	]
+}
