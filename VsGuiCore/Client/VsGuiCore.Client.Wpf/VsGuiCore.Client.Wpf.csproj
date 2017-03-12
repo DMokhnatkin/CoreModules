@@ -130,7 +130,10 @@
       <DependentUpon>MyMainUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="VsGuiCore.cs" />
+    <Compile Include="WorkSpaces\MenuHelper.cs" />
+    <Compile Include="WorkSpaces\MenuItemDescription.cs" />
     <Compile Include="WorkSpaces\Window.cs" />
+    <Compile Include="WorkSpaces\WindowsController.cs" />
     <Compile Include="WpfClientEntry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

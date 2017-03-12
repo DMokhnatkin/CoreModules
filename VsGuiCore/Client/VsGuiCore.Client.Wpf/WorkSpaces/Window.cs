@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ModularSystem.Common.Wpf.UI;
 
 namespace VsGuiCore.Client.Wpf.WorkSpaces
 {
-    class Window
+    public class Window : IWorkSpace
     {
+        /// <inheritdoc />
+        public string Title { get; set; }
+
+        public MenuItemDescription MenuItemDescription { get; }
+
+        public Window(MenuItemDescription menuItemDescription)
+        {
+            MenuItemDescription = menuItemDescription;
+        }
     }
 }
