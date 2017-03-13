@@ -30,11 +30,6 @@ namespace VsGuiCore.Client.Wpf
             p.MainMenu = t.MainMenu;
             p.StatusBar = t.StatusBar;
             ClientAppContext.CurrentContext.Container.Resolve<MainUi>().MainContent = t;
-
-            p.MainMenuItemController.AddMenuItem(new MenuItemDescription("test/test", 0));
-            p.MainMenuItemController.AddMenuItem(new MenuItemDescription("test/test2", 0));
-
-            p.MainMenuItemController.RemoveMenuItem("test/test");
         }
 
         /// <inheritdoc />
