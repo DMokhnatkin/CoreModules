@@ -7,7 +7,7 @@ namespace VsGuiCore.Client.Wpf
 {
     public class VsGuiCore
     {
-        public MainMenuController MainMenuItemController { get; }
+        public MenuController MainMenuItemController { get; }
         public WindowsController WindowsController { get; }
 
         /// <summary>
@@ -22,7 +22,7 @@ namespace VsGuiCore.Client.Wpf
 
         public VsGuiCore()
         {
-            MainMenuItemController = new MainMenuController(this);
+            MainMenuItemController = new MenuController(MainMenu);
             WindowsController = new WindowsController(this);
         }
     }

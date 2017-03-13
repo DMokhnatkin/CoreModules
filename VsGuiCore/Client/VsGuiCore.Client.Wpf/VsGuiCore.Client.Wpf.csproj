@@ -126,7 +126,7 @@
       <DependentUpon>MyMainUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="VsGuiCore.cs" />
-    <Compile Include="WorkSpaces\MainMenuController.cs" />
+    <Compile Include="WorkSpaces\MenuController.cs" />
     <Compile Include="WorkSpaces\MenuItemDescription.cs" />
     <Compile Include="WorkSpaces\Window.cs" />
     <Compile Include="WorkSpaces\WindowsController.cs" />

@@ -6,14 +6,14 @@ using System.Text.RegularExpressions;
 
 namespace VsGuiCore.Client.Wpf.WorkSpaces
 {
-    public class MainMenuController
+    public class MenuController
     {
-        private readonly VsGuiCore _guiCore;
+        private readonly Menu _menu;
         private Dictionary<string, (MenuItemDescription description, WeakReference<MenuItem> menuItem)> _addedItems;
 
-        public MainMenuController(VsGuiCore guiCore)
+        public MenuController(Menu menu)
         {
-            _guiCore = guiCore;
+            _menu = menu;
             _addedItems = new Dictionary<string, (MenuItemDescription description, WeakReference<MenuItem> menuItem)>();
         }
 
@@ -57,7 +57,7 @@ namespace VsGuiCore.Client.Wpf.WorkSpaces
                     Header = itemName
                 };
 
-                ItemsControl parentItem = GetMenuItem(prevPath)?.menuItem ?? (ItemsControl) _guiCore.MainMenu;
+                ItemsControl parentItem = GetMenuItem(prevPath)?.menuItem ?? (ItemsControl) _menu;
 
                 parentItem.Items.Add(item);
                 _addedItems.Add(curPath.ToString(), (description, new WeakReference<MenuItem>(item)));
@@ -92,7 +92,7 @@ namespace VsGuiCore.Client.Wpf.WorkSpaces
                 if (parentPath == null)
                 {
                     var item = t.Value.menuItem;
-                    _guiCore.MainMenu.Items.Remove(item);
+                    _menu.Items.Remove(item);
                 }
                 else
                 {
