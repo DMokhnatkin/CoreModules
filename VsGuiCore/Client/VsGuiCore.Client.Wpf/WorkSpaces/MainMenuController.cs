@@ -31,6 +31,9 @@ namespace VsGuiCore.Client.Wpf.WorkSpaces
             return (_addedItems[path].description, menuItem);
         }
 
+        /// <summary>
+        /// Add menu item
+        /// </summary>
         public void AddMenuItem(MenuItemDescription description)
         {
             if (description.Path.Length == 0)
@@ -74,6 +77,9 @@ namespace VsGuiCore.Client.Wpf.WorkSpaces
             return reg.Match(path).Groups[1].Value;
         }
 
+        /// <summary>
+        /// Remove menu item by path
+        /// </summary>
         public void RemoveMenuItem(string path)
         {
             if (path.Length == 0)
