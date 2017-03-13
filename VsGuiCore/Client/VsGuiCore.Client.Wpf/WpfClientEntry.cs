@@ -2,6 +2,7 @@
 using Microsoft.Practices.Unity;
 using ModularSystem.Common.Wpf;
 using ModularSystem.Common.Wpf.Context;
+using ModularSystem.Common.Wpf.Controllers;
 using ModularSystem.Common.Wpf.UI;
 using TestGuiCore.Client.Wpf;
 using VsGuiCore.Client.Wpf.WorkSpaces;

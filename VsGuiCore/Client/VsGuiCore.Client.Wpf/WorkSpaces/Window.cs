@@ -1,4 +1,5 @@
-﻿using ModularSystem.Common.Wpf.UI;
+﻿using ModularSystem.Common.Wpf.Controllers;
+using ModularSystem.Common.Wpf.UI;
 
 namespace VsGuiCore.Client.Wpf.WorkSpaces
 {
