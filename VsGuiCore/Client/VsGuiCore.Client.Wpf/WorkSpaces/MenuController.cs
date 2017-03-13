@@ -27,7 +27,11 @@ namespace VsGuiCore.Client.Wpf.WorkSpaces
                 return null;
             _addedItems[path].menuItem.TryGetTarget(out var menuItem);
             if (menuItem == null)
+            {
+                // Item was removed somewhere outside this controller
+                _addedItems.Remove(path);
                 return null;
+            }
             return (_addedItems[path].description, menuItem);
         }
 
