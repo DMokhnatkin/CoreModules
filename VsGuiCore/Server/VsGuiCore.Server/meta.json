@@ -1,0 +1,6 @@
+﻿{
+  "identity": "VsGuiServer-1.0.0",
+  "type": "server",
+  "dependencies": [],
+  "start":  "Deploy/start.py"
+}

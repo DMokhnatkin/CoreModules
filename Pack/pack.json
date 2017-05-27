@@ -2,6 +2,7 @@
 	"BatchName" : "CoreModules",
 	"Modules" : 
 	[
-		"../VsGuiCore/Client/VsGuiCore.Client.Wpf/bin/Debug"
+		"../VsGuiCore/Client/VsGuiCore.Client.Wpf/bin/Debug",
+		"../VsGuiCore/Server/VsGuiCore.Server/bin/Debug/net452/win7-x86"
 	]
 }
