@@ -18,6 +18,7 @@ namespace VsGuiCore.Server
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .UseApplicationInsights()
+                .UseUrls("http://*:40000")
                 .Build();
 
             host.Run();

@@ -1,5 +1,6 @@
 ﻿{
-  "identity" : "wpfClientCore-1.0.0",
+  "identity": "wpfClientCore-1.0.0",
   "type": "client",
+  "client_types": [ "wpf" ],
   "dependencies": []
 }
